@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the target directory
-TARGET_DIR="$HOME/.chaos-cli"
+TARGET_DIR="$HOME/.dickhub"
 mkdir -p "$TARGET_DIR"
 
 # Download the images
@@ -26,4 +26,4 @@ osascript -e "tell application \"Finder\" to set desktop picture to POSIX file \
 
 echo "🔥 Wallpaper changed to chaos mode: $IMAGE 🔥"
 
-open "./$TARGET_DIR"
+open "$TARGET_DIR"
