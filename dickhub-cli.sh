@@ -22,7 +22,7 @@ curl -s "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbgluzzM-xfdMsXAs
 IMAGE=$(ls "$TARGET_DIR" | shuf -n 1)
 
 # Set it as the wallpaper (macOS version)
-osascript -e "tell application \"Finder\" to set desktop picture to POSIX file \"$TARGET_DIR/$IMAGE\""
+osascript -e "tell application "System Events" to set picture of every desktop to \"$TARGET_DIR/$IMAGE\""
 
 echo "🔥 Wallpaper changed to chaos mode: $IMAGE 🔥"
 
